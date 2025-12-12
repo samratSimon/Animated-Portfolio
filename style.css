@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,15 +10,19 @@ body {
     font-family: "Poppins", sans-serif;
     color: lightgray;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 a {
     text-decoration: none;
 }
+
 ul li {
     list-style-type: none;
 }
+
 .container {
     position: relative;
     width: 100%;
@@ -29,15 +33,18 @@ ul li {
     gap: 100px;
     background-color: #001f7c35;
 }
+
 .bask-vid {
     position: fixed;
     right: 0;
     bottom: 0;
     mix-blend-mode: lighten;
 }
+
 .box-icon a img {
     width: 20px;
 }
+
 .dIcon {
     width: 20px;
 }
@@ -57,18 +64,22 @@ header {
     box-shadow: 0 0 15px #4c00ff7d;
     z-index: 999;
 }
+
 .left {
     display: flex;
     align-items: center;
 }
+
 .left img {
     width: 40px;
     border-radius: 50%;
     margin: 0 15px;
 }
+
 .left h1 span {
     color: #3B38A0;
 }
+
 header ul {
     display: flex;
     justify-content: space-between;
@@ -79,9 +90,11 @@ header ul {
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px #211ae082;
 }
+
 header ul li {
     list-style: none;
 }
+
 header ul a {
     color: white;
     font-weight: 700;
@@ -92,21 +105,21 @@ header ul a {
     display: flex;
     gap: 40px;
 }
+
 .box-icon a {
     display: flex;
     align-content: center;
     justify-content: center;
-
     padding: 10px;
     border: 2px solid #B2B0E8;
     border-radius: 15px;
     transition: 0.3s ease-in-out;
+
     &:hover {
         background-color: #0329ff69;
         box-shadow: 0 0 15px #7570ff;
     }
 }
-
 
 .blackHollBox {
     position: absolute;
@@ -115,12 +128,12 @@ header ul a {
     justify-content: center;
     z-index: -1;
 }
+
 .blackHollBox video {
     width: 100%;
     margin-top: -23.5%;
     mix-blend-mode: lighten;
 }
-
 
 .hero {
     position: relative;
@@ -130,10 +143,12 @@ header ul a {
     align-items: center;
     justify-content: space-between;
 }
+
 .heroInfo {
     position: absolute;
     left: 5%;
 }
+
 .heroInfo .heroInfoTitle {
     font-size: 12px;
     color: #c7cdee;
@@ -144,6 +159,7 @@ header ul a {
     box-shadow: 0 0 5px #3B38A0;
     border-radius: 50px;
 }
+
 .heroInfo h1 {
     font-size: 60px;
     max-width: 600px;
@@ -151,12 +167,14 @@ header ul a {
     line-height: 70px;
     margin: 40px 0px 30px 0px;
 }
+
 .heroInfo p {
     max-width: 550px;
     line-height: 25px;
     margin-bottom: 40px;
     font-size: 20px;
 }
+
 .heroInfo button {
     color: white;
     padding: 15px 35px;
@@ -166,26 +184,28 @@ header ul a {
     background-color: #1a298051;
     box-shadow: 0 0 5px #3B38A0;
     transition: 0.3s;
+
     &:hover {
         background-color: #0329ff33;
         box-shadow: 0 0 15px #7570ff;
     }
 }
+
 /* gradient Animation */
 .gradient {
-    background: linear-gradient(to right,#3B38A0,#3B38A0,#963bf8,#B2B0E8,#3B38A0);
+    background: linear-gradient(to right, #3B38A0, #3B38A0, #963bf8, #B2B0E8, #3B38A0);
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-gradient 2.5s linear infinite;
 }
+
 @keyframes animate-gradient {
-    to{
+    to {
         background-position: 200%;
     }
 }
-
 
 .heroVidBox {
     position: absolute;
@@ -196,6 +216,7 @@ header ul a {
     height: 900px;
     mix-blend-mode: lighten;
 }
+
 .scroolDown {
     height: 50px;
     width: 30px;
@@ -217,10 +238,9 @@ header ul a {
     height: 10px;
     width: 10px;
     border: 2px solid lightgray;
-    transform: translate(-50%,-100%) rotate(45deg);
+    transform: translate(-50%, -100%) rotate(45deg);
     border-top: transparent;
     border-left: transparent;
-
     animation: scroolDown 2s ease-in-out infinite;
 }
 
@@ -228,23 +248,24 @@ header ul a {
     top: 30%;
     animation-delay: 0.5s;
 }
+
 @keyframes scroolDown {
-    0%{
+    0% {
         opacity: 0;
     }
-    30%, 60% {
+
+    30%,
+    60% {
         opacity: 1;
     }
+
     100% {
         top: 90%;
         opacity: 0;
     }
 }
 
-
-
 /* info sec */
-
 .infoSec {
     display: flex;
     flex-direction: column;
@@ -252,10 +273,12 @@ header ul a {
     width: 80%;
     margin-top: 100px;
 }
+
 .sectionTitle {
     font-size: 40px;
     font-weight: 700;
 }
+
 .infoCard {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -264,6 +287,7 @@ header ul a {
     height: 100%;
     margin-top: 30px;
 }
+
 .card {
     display: flex;
     align-items: flex-start;
@@ -281,11 +305,13 @@ header ul a {
         box-shadow: 0 0 15px #7570ff5b;
     }
 }
+
 .card img {
     width: 80%;
     height: 50%;
     object-fit: cover;
 }
+
 .card h2 {
     position: absolute;
     margin: 0;
@@ -295,6 +321,7 @@ header ul a {
     z-index: 1;
     color: lightgray;
 }
+
 .card p {
     position: absolute;
     bottom: 3%;
@@ -305,6 +332,7 @@ header ul a {
     font-size: 13px;
     line-height: 20px;
 }
+
 .card video {
     margin-top: 10%;
     width: 70%;
@@ -312,6 +340,7 @@ header ul a {
     object-fit: cover;
     mix-blend-mode: lighten;
 }
+
 .card button {
     position: absolute;
     bottom: 5%;
@@ -324,28 +353,35 @@ header ul a {
     background-color: #071142d1;
     box-shadow: 0 0 1px #3B38A0;
     transition: 0.3s;
+
     &:hover {
         background-color: #0329ff33;
         box-shadow: 0 0 5px #7570ff;
     }
 }
+
 .card:nth-child(3) {
     grid-row: span 2;
     height: 83vh;
 }
+
 .card:nth-child(3) p {
     bottom: 12%;
 }
+
 .card:nth-child(3) h2 {
     bottom: 21%;
 }
+
 .card:nth-child(4) {
     grid-column: span 2;
 }
+
 .card:nth-child(4) p {
     max-width: 600px;
     bottom: 10%;
 }
+
 .card:nth-child(4) h2 {
     bottom: 35%;
 }
@@ -361,6 +397,7 @@ header ul a {
     margin-top: 200px;
     margin-bottom: 500px
 }
+
 .projectCard {
     display: flex;
     width: 100%;
@@ -370,7 +407,7 @@ header ul a {
     justify-content: center;
 }
 
-.projectVidBox{
+.projectVidBox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,16 +418,17 @@ header ul a {
     transition: 0.5s;
     mix-blend-mode: exclusion;
 }
+
 .projectVidBox video {
     object-fit: cover;
     width: 100%;
     box-shadow: 0 0 15px lightgray;
     border-radius: 20px;
     transition: 0.5s;
+
     &:hover {
         box-shadow: 0 0 20px;
     }
-
 }
 
 .projectInfo {
@@ -401,6 +439,7 @@ header ul a {
     width: 50%;
     padding-left: 10%;
 }
+
 .projectInfo h2 {
     width: 90%;
     font-size: 25px;
@@ -410,6 +449,7 @@ header ul a {
     margin-top: 0;
     max-width: 450px;
 }
+
 .projectInfo p {
     width: 90%;
     min-width: 300px;
@@ -417,6 +457,7 @@ header ul a {
     margin-bottom: 50px;
     margin-top: 0px;
 }
+
 .projectInfo button {
     color: white;
     padding: 10px 20px;
@@ -426,6 +467,7 @@ header ul a {
     background-color: #071142d1;
     box-shadow: 0 0 1px #3B38A0;
     transition: 0.3s;
+
     &:hover {
         background-color: #0329ff33;
         box-shadow: 0 0 5px #7570ff;
@@ -440,6 +482,7 @@ header ul a {
     width: 30%;
     height: 100px;
 }
+
 .hoverSign::before,
 .hoverSign::after {
     content: "👆";
@@ -450,34 +493,33 @@ header ul a {
     top: 20%;
     left: 40%;
     border-radius: 50%;
-
     animation: hoverAnimation 3s ease-in-out infinite;
 }
+
 @keyframes hoverAnimation {
     0% {
         box-shadow: 0 0 5px lightgray;
         transform: translate(100%, 50%) rotate(30deg);
     }
+
     100% {
         box-shadow: 0 0 15px lightgra;
         transform: translate(50%, 50%) rotate(0deg);
     }
 }
+
 .hoverSign.active {
     display: none;
 }
 
-
-
-
 /*skills Section*/
-
 .skillsSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
+
 .skillsBox {
     width: 100%;
     height: 90vh;
@@ -486,11 +528,13 @@ header ul a {
     align-items: start;
     justify-content: center;
 }
+
 .skillsImg {
     width: 60%;
     mix-blend-mode: lighten;
     opacity: 0.7;
 }
+
 .designer {
     position: absolute;
     display: flex;
@@ -500,6 +544,7 @@ header ul a {
     left: 5%;
     max-width: 300px;
 }
+
 .coder {
     position: absolute;
     display: flex;
@@ -516,13 +561,12 @@ header ul a {
     align-items: center;
     margin-bottom: 20px;
 }
+
 .skillsBox p {
     line-height: 25px;
 }
 
-
 /*slider*/
-
 .slider {
     position: absolute;
     bottom: 5%;
@@ -530,13 +574,7 @@ header ul a {
     width: 60%;
     height: var(--height);
     overflow: hidden;
-    mask-image: linear-gradient(
-    to right,
-    transparent,
-    #000 10%,
-    #000 90%,
-    transparent
-    );
+    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
     mix-blend-mode: difference;
     opacity: 0.8;
     --duration: 10s;
@@ -556,7 +594,7 @@ header ul a {
     left: 100%;
     transition: 0.5s;
     animation: autoRun var(--duration) linear infinite;
-    animation-delay: calc((var(--duration) / var(--quantity)) * (var(--position) - 1))!important;
+    animation-delay: calc((var(--duration) / var(--quantity)) * (var(--position) - 1)) !important;
 }
 
 .slider .list .item img {
@@ -564,21 +602,23 @@ header ul a {
 }
 
 @keyframes autoRun {
-    from{
+    from {
         left: 100%;
-    }to{
-        left:calc(var(--width) * -1)
+    }
+
+    to {
+        left: calc(var(--width) * -1)
     }
 }
 
 .slider:hover .item {
-    animation-play-state: paused!important;
+    animation-play-state: paused !important;
     filter: grayscale(1);
 }
+
 .slider .item:hover {
     filter: grayscale(0);
 }
-
 
 .contactSection {
     width: 80%;
@@ -600,13 +640,13 @@ header ul a {
     display: flex;
     flex-direction: column;
     gap: 25px;
+
     a {
         color: lightgray;
         text-decoration: none;
         font-size: 20px;
         text-wrap: nowrap;
     }
-
 }
 
 .contactBox p {
@@ -624,6 +664,7 @@ header ul a {
     outline: none;
     border-radius: 5px;
 }
+
 .contactBox button {
     display: block;
     margin-top: 30px;
@@ -635,6 +676,7 @@ header ul a {
     background-color: #071142d1;
     box-shadow: 0 0 1px #3B38A0;
     transition: 0.3s;
+
     &:hover {
         background-color: #0329ff33;
         box-shadow: 0 0 5px #7570ff;
@@ -653,70 +695,84 @@ footer {
     backdrop-filter: blur(2px);
     box-shadow: 0 0 15px #3B38A03a;
 }
+
 footer h2 {
     color: lightgray;
 }
+
 .manuIcon {
     cursor: pointer;
     display: none;
 }
+
 .sidebar {
     display: none;
 }
-/*Blur Effect Animation*/
 
+/*Blur Effect Animation*/
 .autoBlur {
-    animation:  autoblurAnimation linear both;
+    animation: autoblurAnimation linear both;
     animation-timeline: view();
 }
+
 @keyframes autoblurAnimation {
     0% {
         filter: blur(40px);
         opacity: 0;
     }
-    35%,65% {
+
+    35%,
+    65% {
         filter: blur(0px);
         opacity: 1;
     }
+
     100% {
         filter: blur(40px);
         opacity: 0;
     }
 }
+
 /*auto display animation*/
 .autoDisplay {
     animation: autoDisplayAnimation both;
     animation-timeline: view();
 }
+
 @keyframes autoDisplayAnimation {
-    from{
+    from {
         filter: blur(10px);
         transform: translateY(-200px);
         opacity: 0.2;
     }
+
     50% {
         opacity: 1;
         filter: blur(0px);
         transform: translateY(0px) scale(1);
     }
 }
-/*fadein animation*/
 
+/*fadein animation*/
 .fadeInRight {
     animation: fadeInRightAnimation both;
     animation-timeline: view();
 }
+
 @keyframes fadeInRightAnimation {
-    0%{
+    0% {
         opacity: 0;
         filter: blur(20px);
         transform: translateX(-500px) scale(0.2);
     }
-    35%, 65%{
+
+    35%,
+    65% {
         opacity: 1;
         filter: blur(0px);
         transform: translateX(0px) scale(1);
     }
+
     100% {
         filter: blur(20px);
     }
@@ -728,67 +784,85 @@ footer h2 {
         height: 100%;
     }
 }
+
 @media (min-aspect-ratio: 16/9) {
     .bask-vid {
         width: 100%;
         height: auto;
     }
 }
-@media screen and (max-width: 1000px){
+
+@media screen and (max-width: 1000px) {
     .blackHollBox video {
         margin-top: -21%;
     }
+
     .heroInfo h1 {
         font-size: 40px;
     }
+
     .heroInfo p {
         max-width: 300px;
     }
+
     .heroVidBox {
         right: 0;
     }
+
     .heroVidBox video {
         height: 500px;
     }
+
     .sectionTitle {
         font-size: 30px;
     }
+
     .infoCard {
         grid-template-columns: auto;
     }
+
     .infoCard .card:nth-child(3) {
         grid-column: span 2;
         height: 70vh;
+
         h2 {
             bottom: 25%;
         }
+
         p {
             bottom: 15%;
         }
+
         video {
-            object-fit:contain ;
+            object-fit: contain;
             height: 65%;
             margin-top: 2%;
         }
     }
+
     .card h2 {
         font-size: 20px;
     }
-    .myProject{
+
+    .myProject {
         margin-bottom: 300px;
     }
+
     .projectVidBox video {
         width: 250px;
         margin-left: -100px;
     }
+
     .projectInfo {
         padding-left: 0px;
         margin-left: -50px;
-        h2{
+
+        h2 {
             font-size: 20px;
             max-width: 200px;
             text-wrap: wrap;
         }
+
         p {
             font-size: 10px;
             max-width: 200px;
@@ -797,103 +871,130 @@ footer h2 {
         }
     }
 }
-@media screen and (max-width: 700px){
-    header{
+
+@media screen and (max-width: 700px) {
+    header {
         position: fixed;
         height: 50px;
         font-size: 20px;
+
         ul {
             display: none;
         }
+
         .box-icon {
             display: none;
         }
     }
+
     .blackHollBox video {
         margin-top: -20%;
     }
+
     .hero {
         flex-direction: column;
     }
-    .autoBlur{
+
+    .autoBlur {
         animation: none;
     }
+
     .heroInfo {
         bottom: 5%;
     }
-    .scroolDown{
+
+    .scroolDown {
         bottom: 5%;
     }
+
     .heroInfo {
         h1 {
             line-height: 50px;
         }
     }
-    .heroVidBox{
+
+    .heroVidBox {
         height: 200px;
         top: 5%;
         right: 5%;
     }
+
     .card {
         h2 {
             font-size: 18px;
         }
+
         p {
             font-size: 12px;
             line-height: 15px;
         }
+
         video {
-           width: 100%;
-       }
+            width: 100%;
+        }
     }
+
     .myProject {
         margin-bottom: 600px;
     }
+
     .projectCard {
         flex-direction: column;
         gap: 30px;
         margin-bottom: 80px;
     }
+
     .projectInfo {
         width: 70%;
+
         p {
             margin-bottom: 10px;
         }
     }
+
     .designer {
         top: 15%;
         left: 18%;
     }
+
     .coder {
         top: 50%;
         left: 18%;
     }
+
     .skillsBox h2 {
         margin-bottom: 0;
         margin-top: 40px;
         font-size: 35px;
     }
+
     .skillsBox p {
         font-size: 15px;
     }
+
     .slider {
         bottom: 0;
     }
+
     .contactSection {
         flex-direction: column;
         margin-top: 100px;
         margin-bottom: 50px;
     }
+
     .contactSection .sectionTitle {
         top: -40px;
         left: 25%;
     }
+
     footer h2 {
         font-size: 15px;
     }
+
     .manuIcon {
         display: inline;
     }
+
     .sidebar {
         display: inline;
         position: fixed;
@@ -907,31 +1008,35 @@ footer h2 {
         background-color: #080f3569;
         backdrop-filter: blur(10px);
         border-bottom-left-radius: 100%;
-
     }
+
     .closeIcon p {
-            font-size: 50px;
-            color: lightgray;
-            padding-left: 10px;
-            cursor: pointer;
-        }
+        font-size: 50px;
+        color: lightgray;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
     .sidebar ul {
         padding-left: 20px;
 
         li {
             list-style: none;
             margin-bottom: 30px;
+
             a {
                 color: lightgray;
                 font-size: 30px;
                 font-weight: 700;
-            text-shadow: 0 0 15px rgba(128, 128, 128, 0.429);
+                text-shadow: 0 0 15px rgba(128, 128, 128, 0.429);
             }
         }
     }
+
     .sidebar.openSidebar {
         animation: openSidebaranimation 1.5s forwards;
     }
+
     @keyframes openSidebaranimation {
         to {
             width: 80%;
@@ -940,9 +1045,11 @@ footer h2 {
             border-radius: 0;
         }
     }
+
     .sidebar.closeSidebar {
         animation: closeSidebaranimation 1.5s forwards;
     }
+
     @keyframes closeSidebaranimation {
         from {
             width: 80%;
@@ -950,6 +1057,7 @@ footer h2 {
             bottom: 0;
             border-radius: 0;
         }
+
         to {
             width: 0;
             opacity: 0;
@@ -957,5 +1065,4 @@ footer h2 {
             border-bottom-left-radius: 50%;
         }
     }
-
 }
